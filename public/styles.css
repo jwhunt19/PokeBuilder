@@ -1,0 +1,205 @@
+/* ===== GENERAL ===== */
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  color: red;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.pokemon-selector {
+  width: 90px;
+  margin: 2px;
+  text-align: center;
+}
+
+/* ===== TYPE CHART ===== */
+
+.type-chart {
+  display: grid;
+  grid-template-columns: 100px 50px 50px 50px 50px 50px 50px 30px 30px;
+  margin-top: 25px;
+}
+
+.col {
+  display: grid;
+  grid-template-rows: 50px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sprite {
+  max-width: 48px;
+}
+
+.cell:not(:first-child) {
+  border: 1px solid black;
+}
+
+.type-weakness {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
+}
+
+.type-totals {
+  text-shadow: -0.8px 0 white, 0 0.8px white, 0.8px 0 white, 0 -0.8px white;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+.weaknesses {
+  background-color: rgb(235, 216, 210);
+}
+
+.resistant {
+  background-color: rgb(213, 248, 213);
+}
+
+.cell0w {
+  background-color: rgb(218, 197, 192);
+}
+
+.cell0r {
+  background-color: rgb(198, 233, 198);
+}
+
+.w3, .w4, .w5, .w6, .r3, .r4, .r5, .r6 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.w3, .w4 {
+  color: orangered;
+}
+
+.w5, .w6 {
+  color: red;
+}
+
+.r3, .r4 {
+  color: greenyellow;
+}
+
+.r5, .r6 {
+  color: lime;
+}
+
+
+[class~="0"] {
+  color: yellow;
+}
+
+[class~="1"] {
+  color: whitesmoke;
+}
+
+[class~="0.25"] {
+  color: lime;
+}
+
+[class~="0.5"] {
+  color: greenyellow;
+}
+
+[class~="2"] {
+  color: orangered;
+}
+
+[class~="4"] {
+  color: red;
+}
+
+.cell0 {
+  background-color: rgb(235, 235, 235);
+}
+
+/* type colors */
+
+.type-label {
+  font-weight: 900;
+  text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
+  letter-spacing: 1px;
+}
+
+.normal {
+  color: bisque;
+}
+
+.fighting {
+  color:chocolate
+}
+
+.flying {
+  color: cornflowerblue;
+}
+
+.poison {
+  color: blueviolet;
+}
+
+.ground {
+  color: peru;
+}
+
+.rock {
+  color:saddlebrown;
+}
+
+.bug {
+  color: greenyellow;
+}
+
+.ghost {
+  color: mediumpurple;
+}
+
+.steel {
+  color: grey;
+}
+
+.fire {
+  color: darkorange;
+}
+
+.water {
+  color: royalblue;
+}
+
+.grass {
+  color: yellowgreen;
+}
+
+.electric {
+  color: yellow;
+}
+
+.psychic {
+  color: palevioletred;
+}
+
+.ice {
+  color: lightcyan;
+}
+
+.dragon {
+  color: blue;
+}
+
+.dark {
+  color: slategray;
+}
+
+.fairy {
+  color: violet;
+}
+
