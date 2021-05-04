@@ -1,5 +1,5 @@
 {
-  "name": "pokebirudo",
+  "name": "pokebuilder",
   "version": "0.0.1",
   "description": "pokemon team builder",
   "main": "webpack.config.js",

@@ -1,4 +1,7 @@
 /* ===== GENERAL ===== */
+* {
+  font-family: 'Krona One', sans-serif;
+}
 
 #app {
   display: flex;
@@ -14,9 +17,11 @@
 }
 
 .pokemon-selector {
-  width: 90px;
+  width: 100px;
+  height: 20px;
   margin: 2px;
   text-align: center;
+  font-size: 0.7rem;
 }
 
 /* ===== TYPE CHART ===== */
@@ -43,7 +48,13 @@
 }
 
 .cell:not(:first-child) {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.cell:last-child {
+  border-bottom: 1px solid black;
 }
 
 .type-weakness {
@@ -54,50 +65,83 @@
 }
 
 .type-totals {
-  text-shadow: -0.8px 0 white, 0 0.8px white, 0.8px 0 white, 0 -0.8px white;
-  color: rgb(0, 0, 0);
+  text-shadow: -0.8px 0 rgb(0, 0, 0), 0 0.8px rgb(0, 0, 0), 0.8px 0 rgb(0, 0, 0), 0 -0.8px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 900;
 }
 
 .weaknesses {
-  background-color: rgb(235, 216, 210);
+  background-color: rgba(255, 0, 0, 0.1);
 }
 
 .resistant {
-  background-color: rgb(213, 248, 213);
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .cell0w {
-  background-color: rgb(218, 197, 192);
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .cell0r {
-  background-color: rgb(198, 233, 198);
+  background-color: rgba(0, 255, 0, 0.2);
 }
 
 .w3, .w4, .w5, .w6, .r3, .r4, .r5, .r6 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.w3, .w4 {
-  color: orangered;
+.w1 {
+  color: rgb(255, 220, 220);
 }
 
-.w5, .w6 {
-  color: red;
+.w2 {
+  color: rgb(255, 180, 180);
 }
 
-.r3, .r4 {
-  color: greenyellow;
+.w3 {
+  color: rgb(255, 140, 140);
 }
 
-.r5, .r6 {
-  color: lime;
+.w4 {
+  color: rgb(255, 100, 100);
 }
 
+.w5 {
+  color: rgb(255, 60, 60);
+}
+
+.w6 {
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 150, 150);  
+}
+
+.r1 {
+  color: rgb(220, 255, 220);
+}
+
+.r2 {
+  color: rgb(180, 255, 180);
+}
+
+.r3 {
+  color: rgb(140, 255, 140);
+}
+
+.r4 {
+  color: rgb(100, 255, 100);
+}
+
+.r5 {
+  color: rgb(60, 255, 60);
+}
+
+.r6 {
+  color: rgb(0, 255, 0);
+  background-color: rgb(150, 255, 150);
+}
 
 [class~="0"] {
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 [class~="0.25"] {
@@ -105,11 +149,11 @@
 }
 
 [class~="0.5"] {
-  background-color: rgba(0, 255, 0, 0.3) !important;
+  background-color: rgba(0, 255, 0, 0.2) !important;
 }
 
 [class~="2"] {
-  background-color: rgba(255, 0, 0, 0.3) !important;
+  background-color: rgba(255, 0, 0, 0.2) !important;
 }
 
 [class~="4"] {
@@ -126,7 +170,6 @@
   font-weight: 900;
   text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
   font-size: 0.9rem;
-  font-family: 'Krona One', sans-serif;
   color: white;
 }
 
