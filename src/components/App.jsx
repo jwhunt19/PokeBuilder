@@ -97,7 +97,7 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <h1 className="title">Pokéビルド</h1>
+        <h1 className="title">PokéBuilder</h1>
         <div>
         {
           this.state.pokemon.map((pokemon, i) => (

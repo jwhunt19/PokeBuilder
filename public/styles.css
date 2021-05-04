@@ -49,6 +49,7 @@
 .type-weakness {
   font-weight: 900;
   letter-spacing: 1.5px;
+  color: white;
   text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
 }
 
@@ -96,27 +97,23 @@
 
 
 [class~="0"] {
-  color: yellow;
-}
-
-[class~="1"] {
-  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
 [class~="0.25"] {
-  color: lime;
+  background-color: rgba(0, 255, 0, 0.6) !important;
 }
 
 [class~="0.5"] {
-  color: greenyellow;
+  background-color: rgba(0, 255, 0, 0.3) !important;
 }
 
 [class~="2"] {
-  color: orangered;
+  background-color: rgba(255, 0, 0, 0.3) !important;
 }
 
 [class~="4"] {
-  color: red;
+  background-color: rgba(255, 0, 0, 0.6) !important;
 }
 
 .cell0 {
@@ -128,78 +125,80 @@
 .type-label {
   font-weight: 900;
   text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
-  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-family: 'Krona One', sans-serif;
+  color: white;
 }
 
 .normal {
-  color: bisque;
+  background-color: #BDBDAE;
 }
 
 .fighting {
-  color:chocolate
+  background-color:#A85644;
 }
 
 .flying {
-  color: cornflowerblue;
+  background-color: #79A4FF;
 }
 
 .poison {
-  color: blueviolet;
+  background-color: #AB5DA2;
 }
 
 .ground {
-  color: peru;
+  background-color: #EECD56;
 }
 
 .rock {
-  color:saddlebrown;
+  background-color:#CEBD72;
 }
 
 .bug {
-  color: greenyellow;
+  background-color: #C2D21F;
 }
 
 .ghost {
-  color: mediumpurple;
+  background-color: #7975D7;
 }
 
 .steel {
-  color: grey;
+  background-color: #C4C2DA;
 }
 
 .fire {
-  color: darkorange;
+  background-color: #FA5643;
 }
 
 .water {
-  color: royalblue;
+  background-color: #57AFFF;
 }
 
 .grass {
-  color: yellowgreen;
+  background-color: #8DD952;
 }
 
 .electric {
-  color: yellow;
+  background-color: #FDE33B;
 }
 
 .psychic {
-  color: palevioletred;
+  background-color: #FA64B4;
 }
 
 .ice {
-  color: lightcyan;
+  background-color: #96F1FF;
 }
 
 .dragon {
-  color: blue;
+  background-color: #8874FF;
 }
 
 .dark {
-  color: slategray;
+  background-color: #8C6855;
 }
 
 .fairy {
-  color: violet;
+  background-color: #FAADFF;
 }
 
