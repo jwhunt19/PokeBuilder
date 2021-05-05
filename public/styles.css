@@ -245,3 +245,30 @@
   background-color: #FAADFF;
 }
 
+/* ===== SIMPLE - SPECIAL / PHYSICAL ===== */
+
+.sp-wrapper {
+  display: grid;
+  grid-template-columns: 100px 25px 25px 25px;
+  margin-top: 50px;
+}
+
+.sp-col div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp-col div:nth-child(n+3) {
+  border: 1px solid black;
+}
+
+.sp-text {
+  visibility: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.sp-col:hover .sp-text {
+  visibility: visible;
+}

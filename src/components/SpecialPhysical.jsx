@@ -34,32 +34,38 @@ const SpecialPhsyical = ({ pokemon }) => {
     }
   })
 
-  let offenseMessage = ''
-  let defenseMessage = ''
-
-  if ((offense.physical === 3 && offense.mixed > 1) || offense.physical > 3) {
-    offenseMessage = `OFFENSE: Your team leans physical with ${offense.physical} physical attackers, ${offense.mixed} balanced attackers, and ${offense.special} special attackers`
-  } else if ((offense.special === 3 && offense.mixed > 1) || offense.special > 3) {
-    offenseMessage = `OFFENSE: Your team leans special with ${offense.special} special attackers, ${offense.mixed} balanced attackers, and ${offense.physical} physical attackers`
-  } else {
-    offenseMessage = `OFFENSE: Your team is balanced with ${offense.mixed} balanced attackers, ${offense.special} special attackers, and ${offense.physical} physical attackers`
-  }
-
-  if ((defense.physical === 3 && defense.mixed > 1) || defense.physical > 3) {
-    defenseMessage = `DEFENSE: Your team leans physical with ${defense.physical} physical defenders, ${defense.mixed} balanced defenders, and ${defense.special} special defenders`
-  } else if ((defense.special === 3 && defense.mixed > 1) || defense.special > 3) {
-    defenseMessage = `DEFENSE: Your team leans special with ${defense.special} special defenders, ${defense.mixed} balanced defenders, and ${defense.physical} physical defenders`
-  } else {
-    defenseMessage = `DEFENSE: Your team is balanced with ${defense.mixed} balanced defenders, ${defense.special} special defenders, and ${defense.physical} physical defenders`
-  }
-
   return (
     <>
-    <br />
-    <br />
-      <div>{offenseMessage}</div>
-    <br />
-      <div>{defenseMessage}</div>
+    <div className="sp-wrapper">
+      <div className='sp-labels sp-col'>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>Attack</div>
+        <div>Defense</div>
+      </div>
+
+      <div className="sp-physical sp-col">
+        <p className='sp-text'>Physical</p>
+        <div>P</div>
+        <div>{offense.physical}</div>
+        <div>{defense.physical}</div>
+      </div>
+
+      <div className="sp-special sp-col">
+      <p className='sp-text'>Special</p>
+        <div>S</div>
+        <div>{offense.special}</div>
+        <div>{defense.special}</div>
+      </div>
+
+      <div className="sp-mixed sp-col">
+        <p className='sp-text'>Mixed</p>
+        <div>M</div>
+        <div>{offense.mixed}</div>
+        <div>{defense.mixed}</div>
+      </div>
+
+    </div>
     </>
   )
 }
