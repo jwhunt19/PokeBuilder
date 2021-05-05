@@ -15,7 +15,7 @@ const seedTypes = async () => {
 }
 
 const seedPokemon = async () => {
-  for (let i = 1; i < 252; i++) {
+  for (let i = 1; i <= 898; i++) {
     const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
     const stats = {}
     const types = []
@@ -33,7 +33,9 @@ const seedPokemon = async () => {
     await Pokemon.create({
       id: data.id,
       name: data.name,
-      sprite: data.sprites.versions['generation-ii'].gold.front_default,
+      shiny: data.sprites.front_shiny,
+      sprite: data.sprites.front_default,
+      // sprite: data.sprites.versions['generation-ii'].gold.front_default,
       stats: stats,
       types: types
     })
