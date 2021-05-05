@@ -16,6 +16,12 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
+.pokemon-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .pokemon-selector {
   width: 100px;
   height: 20px;
@@ -44,7 +50,7 @@
 }
 
 .sprite {
-  max-width: 48px;
+  max-width: 50px;
 }
 
 .cell:not(:first-child) {
@@ -271,4 +277,30 @@
 
 .sp-col:hover .sp-text {
   visibility: visible;
+}
+
+@media screen and (max-width: 450px) {
+
+  .type-label {
+    font-size: 0.85rem;
+  }
+
+  .type-chart {
+    grid-template-columns: 95px 45px 45px 45px 45px 45px 45px 25px 25px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .type-label {
+    font-size: 0.7rem;
+  }
+
+  .type-chart {
+    grid-template-columns: 90px 30px 30px 30px 30px 30px 30px 25px 25px;
+  }
 }
